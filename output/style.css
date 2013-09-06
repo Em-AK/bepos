@@ -1,20 +1,21 @@
 #nav {
-  color: #B4B4B4;
+  color: rgb(140, 140, 140);
   font-family: 'Open Sans', sans-serif;
 }
 .brand {
   font-size: 60px;
   text-decoration: none;
   font-weight: 800;
-  color: #B4B4B4;
+  color: rgb(120, 120, 120);
 }
 .brand:hover, .brand:focus {
-  color: #DDDDDD;
+  color: rgb(190, 190, 190);
   text-decoration: none;
 }
 #nav blockquote {
   font-style: italic;
   font-size: 18px;
+  margin-bottom: 25px;
 }
 #nav p {
   font-size: 16px;
