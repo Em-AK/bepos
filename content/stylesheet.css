@@ -1,0 +1,20 @@
+#nav {
+  color: #BEBEBE;
+}
+.brand {
+  font-size: 60px;
+  text-decoration: none;
+  font-weight: 800;
+  color: #BEBEBE;
+}
+.brand:hover, .brand:focus {
+  color: #B4B4B4;
+  text-decoration: none;
+}
+#nav blockquote {
+  font-style: italic;
+  font-size: 18px;
+}
+#content p {
+  font-size: 20px;
+}
