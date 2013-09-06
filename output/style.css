@@ -1,6 +1,6 @@
 #nav {
   color: #B4B4B4;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 .brand {
   font-size: 60px;
@@ -9,7 +9,7 @@
   color: #B4B4B4;
 }
 .brand:hover, .brand:focus {
-  color: #DDD;
+  color: #DDDDDD;
   text-decoration: none;
 }
 #nav blockquote {

@@ -300,8 +300,8 @@ html {
 }
 
 body {
-  font-family: serif;
-  font-size: 19px;
+  font-family: 'Alice', serif;
+  font-size: 22px;
   line-height: 1.428571429;
   color: rgb(221, 221, 221);
   background-color: rgb(100, 100, 100);
@@ -462,7 +462,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 800;
   line-height: 1.1;
 }
@@ -500,49 +500,49 @@ h6 {
 
 h1,
 .h1 {
-  font-size: 36px;
+  font-size: 40px;
 }
 
 h2,
 .h2 {
-  font-size: 30px;
+  font-size: 34px;
 }
 
 h3,
 .h3 {
-  font-size: 24px;
+  font-size: 28px;
 }
 
 h4,
 .h4 {
-  font-size: 18px;
+  font-size: 22px;
 }
 
 h5,
 .h5 {
-  font-size: 14px;
+  font-size: 18px;
 }
 
 h6,
 .h6 {
-  font-size: 12px;
+  font-size: 16px;
 }
 
 h1 small,
 .h1 small {
-  font-size: 24px;
+  font-size: 28px;
 }
 
 h2 small,
 .h2 small {
-  font-size: 18px;
+  font-size: 22px;
 }
 
 h3 small,
 .h3 small,
 h4 small,
 .h4 small {
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .page-header {
@@ -1068,6 +1068,9 @@ pre code {
 }
 
 @media (min-width: 992px) {
+  #nav {
+    position: fixed;
+  }
   .container {
     max-width: 970px;
   }

@@ -3,24 +3,30 @@
   <head>
     <meta charset="utf-8">
     <title>Bepos - <%= @item[:title] %></title>
+
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./bootstrap.css">
+    <link href='http://fonts.googleapis.com/css?family=Alice' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:800,400italic' rel='stylesheet' type='text/css'>
+
     <!-- you don't need to keep this, but it's cool for stats! -->
     <meta name="generator" content="nanoc <%= Nanoc::VERSION %>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   </head>
   <body>
     <div class="container">
       <div class="row">
         <div id="nav" class="col-md-3">
           <a class="brand" href="http://bepos.be">BepOS</a>
-          <blockquote>Hacking for <br /> Hapiness</blockquote>
+          <blockquote>Hacking for <br />Hapiness</blockquote>
         </div>
-        <div id="content" class="col-md-6">
+        <div id="content" class="col-md-7 col-md-offset-3">
           <%= yield %>
         </div>
       </div>
     </div> <!-- closing .container -->
+
     <!-- Latest compiled and minified Bootsrtap JavaScript -->
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
