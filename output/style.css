@@ -1,20 +1,18 @@
 #nav {
-  color: #BEBEBE;
+  color: #B4B4B4;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .brand {
   font-size: 60px;
   text-decoration: none;
   font-weight: 800;
-  color: #BEBEBE;
+  color: #B4B4B4;
 }
 .brand:hover, .brand:focus {
-  color: #B4B4B4;
+  color: #DDD;
   text-decoration: none;
 }
 #nav blockquote {
   font-style: italic;
   font-size: 18px;
-}
-#content p {
-  font-size: 20px;
 }
