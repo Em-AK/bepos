@@ -2,7 +2,6 @@
   <div class='post'>
     <h1><%= item[:title] %></h1>
     <p class="pub_date text-right"><%= get_pretty_date(item).upcase %></p>
-    <!-- blockquote>Pulished on <%= get_pretty_date(item) %></blockquote -->
     <article>
       <%= yield %>
     </article>

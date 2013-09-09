@@ -1,18 +1,9 @@
 ---
 title: Home
 ---
-
-<h1>Hello Simplon!</h1>
-
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, repudiandae, possimus, repellat accusantium minus numquam nobis dolorum fuga tempore deserunt autem hic architecto exercitationem laboriosam similique voluptate veritatis illo qui.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, ipsa tempore iure recusandae velit! Sint, maiores quia incidunt voluptatibus doloremque tenetur voluptas atque eius deserunt at! Ducimus quis dignissimos facilis!</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, amet, magnam, voluptatibus, omnis aliquid provident hic veritatis vero quibusdam ratione impedit quis mollitia repellat dolore veniam voluptatum id molestiae optio.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, repudiandae, possimus, repellat accusantium minus numquam nobis dolorum fuga tempore deserunt autem hic architecto exercitationem laboriosam similique voluptate veritatis illo qui.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, ipsa tempore iure recusandae velit! Sint, maiores quia incidunt voluptatibus doloremque tenetur voluptas atque eius deserunt at! Ducimus quis dignissimos facilis!</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, amet, magnam, voluptatibus, omnis aliquid provident hic veritatis vero quibusdam ratione impedit quis mollitia repellat dolore veniam voluptatum id molestiae optio.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, repudiandae, possimus, repellat accusantium minus numquam nobis dolorum fuga tempore deserunt autem hic architecto exercitationem laboriosam similique voluptate veritatis illo qui.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, ipsa tempore iure recusandae velit! Sint, maiores quia incidunt voluptatibus doloremque tenetur voluptas atque eius deserunt at! Ducimus quis dignissimos facilis!</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, amet, magnam, voluptatibus, omnis aliquid provident hic veritatis vero quibusdam ratione impedit quis mollitia repellat dolore veniam voluptatum id molestiae optio.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, repudiandae, possimus, repellat accusantium minus numquam nobis dolorum fuga tempore deserunt autem hic architecto exercitationem laboriosam similique voluptate veritatis illo qui.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, ipsa tempore iure recusandae velit! Sint, maiores quia incidunt voluptatibus doloremque tenetur voluptas atque eius deserunt at! Ducimus quis dignissimos facilis!</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, amet, magnam, voluptatibus, omnis aliquid provident hic veritatis vero quibusdam ratione impedit quis mollitia repellat dolore veniam voluptatum id molestiae optio.</p>
+<h1>Reading list</h1>
+<% sorted_articles.each do |post| %>
+  <div class='post'>
+    <h2><%= link_to post[:title], post.path %></h2>
+  </div>
+<% end %>
