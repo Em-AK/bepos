@@ -12,12 +12,21 @@
   color: rgb(190, 190, 190);
   text-decoration: none;
 }
-#nav blockquote {
-  font-style: italic;
-  font-size: 18px;
-  margin-bottom: 25px;
-}
 #nav p {
   font-size: 16px;
   font-weight: 400;
+}
+#nav .tagline {
+  font-size: 93%;
+  margin-top: -10px;
+  margin-bottom: 25px;
+  margin-left: 5px;
+  font-style: italic;
+}
+.pub_date {
+  border-right: 5px solid rgb(190, 190, 190);
+  padding: 5px 20px;
+  margin: 0px 20px 20px;
+  font-size: 16px;
+  font-family: 'Open Sans',sans-serif;
 }
