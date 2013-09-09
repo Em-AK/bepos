@@ -9,7 +9,7 @@ Written with ♥ by [EmAK](http://twitter.com/em_hack) under CC-BY.
 > ⊝ - not implemented  
 > ✓ - done!
 
-### ⊝ Article unique #ID 
+### ✓ Article unique #ID 
 
 * *Given* some articles were published on my blog   
 * *When* I visit one article   
