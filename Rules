@@ -40,9 +40,6 @@ route '/bootstrap/' do
 end
 route 'posts/drafts/*' do 
 end
-# route '/posts/*/' do
-#   item.identifier.chop + '.html'
-# end
 route '*' do
   if item.binary?
     # Write item with identifier /foo/ to /foo.ext
