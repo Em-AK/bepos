@@ -30,7 +30,7 @@ Written with ♥ by [EmAK](http://twitter.com/em_hack) under CC-BY.
 * *When* I read one article
 * *Then* I should see the date of publication
 
-## ⊝ Display time to read
+### ⊝ Display time to read
 * *Given* some articles were published on my blog
 	* *And* each article takes time_to_read
 * *When* I visit the home page
@@ -42,3 +42,9 @@ Written with ♥ by [EmAK](http://twitter.com/em_hack) under CC-BY.
 * *Then* I should see the author's twitter @ID
 	* *And* the #twitter_tag of the article
 	* *And* a link to the #twitter_tag query on twitter.com
+
+### ⊝ Support french and english
+* *Given* some articles were published on my blog
+* *When* I visit the blog in english
+* *Then* I should be able to switch from english to french
+
