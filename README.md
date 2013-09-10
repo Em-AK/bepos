@@ -30,7 +30,7 @@ Written with ♥ by [EmAK](http://twitter.com/em_hack) under CC-BY.
 * *When* I read one article
 * *Then* I should see the date of publication
 
-### ⊝ Display time to read
+### ✓ Display time to read
 * *Given* some articles were published on my blog
 	* *And* each article takes time_to_read
 * *When* I visit the home page

@@ -19,7 +19,7 @@ module PostHelper
   	elsif time >= 1 && time < 1.6
   		reading_time = "1 minute"
   	end
-  	reading_time
+  	reading_time.upcase
 	end
 end
 

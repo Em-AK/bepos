@@ -15,7 +15,7 @@
 #nav p {
   font-size: 16px;
   font-weight: 400;
-}
+} 
 #nav .tagline {
   font-size: 93%;
   margin-top: -10px;
@@ -31,11 +31,18 @@
 }
 .reading-menu {
   padding-left: 0;
+  margin-top: 25px;
 }
 .reading-menu li {
   list-style: none;
 }
+.reading-menu span {
+  float: right;
+  padding-top: 5px;
+  font-family: 'Open Sans',sans-serif;
+  font-size: 18px;
+}
 .reading-menu h2 {
-  font-size: 30px;
+  font-size: 26px;
   font-weight: 400;
 }
