@@ -1,7 +1,7 @@
 <% render 'default' do %>
   <div class='post'>
     <h1><%= item[:title] %></h1>
-    <p class="pub_date text-right"><%= get_pretty_date(item).upcase %></p>
+    <p class="meta-data text-right"><%= get_pretty_date(item).upcase %> <span class="icon-stopwatch"> <%= get_reading_time(item)%> min.</span></p>
     <article>
       <%= yield %>
     </article>

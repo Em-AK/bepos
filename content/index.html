@@ -5,7 +5,7 @@ title: Home
 <ul class="reading-menu">
 	<% sorted_articles.each do |post| %>
   <li>
-		<span><%= get_reading_time(post) %></span>
+		<span class="icon-stopwatch"> <%= get_reading_time(post)%></span>
     <h2><%= link_to post[:title], post.path %></h2>
   </li>
 <% end %>

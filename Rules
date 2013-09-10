@@ -16,6 +16,9 @@
 compile '/stylesheet/' do
   # don’t filter or layout
 end
+compile '/fonts/*/' do
+  # don’t filter or layout
+end
 compile '/bootstrap/' do
   # don’t filter or layout
 end
@@ -38,7 +41,7 @@ end
 route '/bootstrap/' do
   '/bootstrap.css'
 end
-route 'posts/drafts/*' do 
+route 'posts/drafts/*/' do 
 end
 route '*' do
   if item.binary?

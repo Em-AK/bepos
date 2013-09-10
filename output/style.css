@@ -1,3 +1,5 @@
+/* Custom CSS */
+
 #nav {
   color: rgb(140, 140, 140);
   font-family: 'Open Sans', sans-serif;
@@ -22,12 +24,15 @@
   margin-bottom: 25px;
   font-style: italic;
 }
-.pub_date {
+.meta-data {
   border-right: 5px solid rgb(190, 190, 190);
   padding: 5px 20px;
   margin: 0px 0px 20px;
   font-size: 16px;
   font-family: 'Open Sans',sans-serif;
+}
+.meta-data span {
+  margin-left: 30px;
 }
 .reading-menu {
   padding-left: 0;
@@ -45,4 +50,94 @@
 .reading-menu h2 {
   font-size: 26px;
   font-weight: 400;
+}
+
+
+/* Icon set */
+
+@charset "UTF-8";
+@font-face {
+  font-family: "icon-set";
+  src:url("fonts/icon-set-eot.eot");
+  src:url("fonts/icon-set-eot.eot?#iefix") format("embedded-opentype"),
+    url("fonts/icon-set-ttf.ttf") format("truetype"),
+    url("fonts/icon-set-svg.svg#untitled-font-1") format("svg"),
+    url("fonts/icon-set-woff.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+[data-icon]:before {
+  font-family: "icon-set";
+  content: attr(data-icon);
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "icon-set";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+} 
+.icon-clock:before {
+   content: "b"; 
+} 
+.icon-github-circled:before {
+   content: "a"; 
+} 
+.icon-cc-by:before {
+   content: "c"; 
+} 
+.icon-cc:before {
+   content: "d"; 
+} 
+.icon-facebook-circled:before {
+   content: "e"; 
+} 
+.icon-info-circled:before {
+   content: "f"; 
+} 
+.icon-linkedin-circled:before {
+   content: "g"; 
+} 
+.icon-twitter-circled:before {
+   content: "h"; 
+} 
+.icon-rss:before {
+   content: "i"; 
+} 
+.icon-search:before {
+   content: "j"; 
+} 
+.icon-heart:before {
+   content: "k"; 
+} 
+.icon-heart-empty:before {
+   content: "l"; 
+} 
+.icon-flow-branch:before {
+   content: "m"; 
+} 
+.icon-megaphone:before {
+   content: "p"; 
+} 
+.icon-mail:before {
+   content: "s"; 
+} 
+.icon-tag:before {
+   content: "r"; 
+} 
+.icon-stopwatch:before {
+   content: "q"; 
+} 
+.icon-comment:before {
+   content: "o"; 
+} 
+.icon-chat:before {
+   content: "t"; 
 }
