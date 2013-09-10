@@ -1,9 +1,9 @@
 ---
 title: Home
 ---
-<h1>Reading list</h1>
+<h1>Reading Menu</h1>
 <% sorted_articles.each do |post| %>
-  <div class='post'>
+  <div class='post-title'>
     <h2><%= link_to post[:title], post.path %></h2>
   </div>
 <% end %>
