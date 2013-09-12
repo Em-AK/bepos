@@ -41,7 +41,8 @@ end
 route '/bootstrap/' do
   '/bootstrap.css'
 end
-route 'posts/drafts/*/' do 
+route '/posts/drafts/*/' do
+  # don't output drafts
 end
 route '*' do
   if item.binary?

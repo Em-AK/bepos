@@ -2,12 +2,12 @@
 
 #nav {
   color: rgb(140, 140, 140);
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 .brand {
   font-size: 60px;
   text-decoration: none;
-  font-weight: 800;
+  font-weight: 900;
   color: rgb(120, 120, 120);
 }
 .brand:hover, .brand:focus {
@@ -15,7 +15,7 @@
   text-decoration: none;
 }
 #nav p {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
 } 
 #nav .tagline {
@@ -25,18 +25,18 @@
   font-style: italic;
 }
 .meta-data {
-  border-right: 5px solid rgb(190, 190, 190);
+  border-right: 3px solid rgb(190, 190, 190);
   padding: 5px 20px;
-  margin: 0px 0px 20px;
-  font-size: 16px;
-  font-family: 'Open Sans',sans-serif;
+  margin: 0px 0px 35px;
+  font-size: 18px;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 .meta-data span {
   margin-left: 30px;
 }
 .reading-menu {
   padding-left: 0;
-  margin-top: 25px;
+  margin-top: 85px;
 }
 .reading-menu li {
   list-style: none;
@@ -44,11 +44,11 @@
 .reading-menu span {
   float: right;
   padding-top: 5px;
-  font-family: 'Open Sans',sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 18px;
 }
 .reading-menu h2 {
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 400;
 }
 

@@ -300,8 +300,8 @@ html {
 }
 
 body {
-  font-family: 'Alice', serif;
-  font-size: 22px;
+  font-family: 'Merriweather', serif;
+  font-size: 21px;
   line-height: 1.428571429;
   color: rgb(190, 190, 190);
   background-color: #424242;
@@ -462,7 +462,7 @@ h6,
 .h5,
 .h6 {
   font-family: 'Open Sans', sans-serif;
-  font-weight: 800;
+  font-weight: 600;
   line-height: 1.1;
 }
 
@@ -489,6 +489,10 @@ h3 {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+h2,
+h3 {
+  margin-top: 25px;
+}
 
 h4,
 h5,
@@ -499,17 +503,17 @@ h6 {
 
 h1,
 .h1 {
-  font-size: 40px;
+  font-size: 38px;
 }
 
 h2,
 .h2 {
-  font-size: 34px;
+  font-size: 30px;
 }
 
 h3,
 .h3 {
-  font-size: 28px;
+  font-size: 26px;
 }
 
 h4,
