@@ -295,14 +295,13 @@ table {
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 body {
-  font-family: 'Merriweather', serif;
-  font-size: 21px;
-  line-height: 1.428571429;
+  font-family: 'Gentium Book Basic', 'Palatino', Georgia, serif; 
+  font-size: 1.4em;
   color: rgb(190, 190, 190);
   background-color: #424242;
 }
@@ -389,7 +388,7 @@ hr {
 }
 
 p {
-  margin: 0 0 10px;
+  margin: 1.2em 0;
 }
 
 .lead {
@@ -461,9 +460,9 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
-  line-height: 1.1;
+  font-family: 'Gentium Book Basic', 'Palatino', Georgia, serif; 
+  font-weight: 700;
+  line-height: 1.2;
 }
 
 h1 small,
@@ -656,6 +655,9 @@ blockquote p {
 
 blockquote p:last-child {
   margin-bottom: 0;
+}
+blockquote p:first-child {
+  margin-top: 0;
 }
 
 blockquote small {

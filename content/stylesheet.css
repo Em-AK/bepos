@@ -1,26 +1,35 @@
 /* Custom CSS */
 
 #nav {
-  color: rgb(140, 140, 140);
+  color: rgb(100, 100, 100);
   font-family: 'Source Sans Pro', sans-serif;
+}
+#nav p {
+  font-size: 18px;
+  font-weight: 400; 
 }
 .brand {
   font-size: 60px;
-  text-decoration: none;
   font-weight: 900;
-  color: rgb(120, 120, 120);
+  text-decoration: none;
 }
 .brand:hover, .brand:focus {
   color: rgb(190, 190, 190);
   text-decoration: none;
 }
-#nav p {
-  font-size: 18px;
-  font-weight: 400;
-} 
+.brand, .author a {
+  color: rgb(100, 100, 100);
+}
+.author a {
+  text-decoration: underline;
+}
+.author a:hover, .author a:focus {
+  color: rgb(0, 184, 255);
+  text-decoration: none;
+}
 #nav .tagline {
   font-size: 93%;
-  margin-top: -10px;
+  margin-top: -8px;
   margin-bottom: 25px;
   font-style: italic;
 }
@@ -43,15 +52,17 @@
 }
 .reading-menu span {
   float: right;
-  padding-top: 5px;
+  padding-top: 4px;
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 18px;
+  font-size: 0.9em;
 }
 .reading-menu h2 {
-  font-size: 24px;
+  font-size: 1.3em;
   font-weight: 400;
 }
-
+article {
+  line-height: 1.4em;
+}
 
 /* Icon set */
 
