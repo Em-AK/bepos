@@ -71,7 +71,7 @@ Le wiki est notre base de connaissance. On y archive le contenu utile à l'ensem
 
 ## Intégration
 
-Si vous me lisez vous avez surement entendu parler du concours *Launching People* organisé par Samsung. Encore désolé pour le spam...et surtout **MERCI** pour votre soutient! Vous nous avez permis d'accéder à la finale, résultat des courses courant octobre après délibération du jurry.
+Si vous me lisez vous avez surement entendu parler du concours *Launching People* organisé par Samsung. Encore désolé pour le spam...et surtout **MERCI** pour votre soutient! Vous nous avez permis d'accéder à la finale, résultat des courses courant octobre après délibération du jury.
 
 {:refdef: .picture}
 ![Simplon en finale](../../img/1-simplon-42.png) 
