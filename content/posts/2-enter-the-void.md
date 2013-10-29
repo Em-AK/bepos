@@ -15,7 +15,7 @@ J'ai profité des derniers jours de **la prairie** pour participer à mon premie
 *Dernières roulades insouciantes dans l'herbe grasse*
 {: refdef}
 
-Le coup de sifflet du grand départ a rettentit sous la verrière de Simplon, un certain lundi matin de la semaine 42. Frédéric commence par poser le cadre des semaines à venir avec une présentation courte et énergique devant [micros](http://www.lemouv.fr/diffusion-une-fabrique-de-codeurs-en-seine-saint-denis) et caméras.
+Le coup de sifflet du grand départ a rettenti sous la verrière de Simplon, un certain lundi matin de la semaine 42. Frédéric commence par poser le cadre des semaines à venir avec une présentation courte et énergique devant [micros](http://www.lemouv.fr/diffusion-une-fabrique-de-codeurs-en-seine-saint-denis) et caméras.
 
 {:refdef: .picture}
 ![Enter](../../img/2-enter.jpg)
@@ -54,7 +54,7 @@ Entre l'enthousiasme des uns, le découragement des autres, le coup de geule voi
 
 ## La vie de couple
 
-Tout ce que je fais, on le fais à deux. Chaque binôme a une machine (on a baptisé la notre *hal-9000*), un écran et deux claviers. La souris est supperflue dans l'environnement graphique d'Xmonad. Apprendre à deux c'est un petit challenge au début mais on y prend vite goût. Premier réflexe à aquérir : poser des question quand on ne comprend pas!
+Tout ce que je fais, on le fais à deux. Chaque binôme a une machine (on a baptisé la notre *hal-9000*), un écran et deux claviers. La souris est supperflue dans l'environnement graphique d'[Xmonad](http://xmonad.org/). Apprendre à deux c'est un petit challenge au début mais on y prend vite goût. Premier réflexe à aquérir : poser des question quand on ne comprend pas!
 
 Ce qui est vraiment appréciable c'est qu'en plus d'apprendre ce que je savais ne pas savoir, j'apprend ce que mon binôme ne sait pas et que je ne pensais pas ne pas savoir ;)   
 Oui, l'entraide est dans l'ADN des simplonnien(ne)s et ça se vérifie tous les jours.
