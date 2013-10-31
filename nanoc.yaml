@@ -75,3 +75,9 @@ watcher:
   # When to send notifications (using Growl or notify-send).
   notify_on_compilation_success: true
   notify_on_compilation_failure: true
+
+#specify the parameters of the website (needed to generate the atom xml feed)
+base_url: http://bepos.be
+author_name: "@Em_hack"
+author_uri: https://twitter.com/Em_hack
+title: "Bepos {Hacking for Hapiness}"
