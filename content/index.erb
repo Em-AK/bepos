@@ -1,0 +1,14 @@
+---
+title: Home
+lang: none
+---
+        <nav id="content" class="col-md-6 col-md-offset-3">
+          <ul class="reading-menu">
+            <% sorted_articles.each do |post| %>
+            <li>
+              <span class="icon-stopwatch"> <%= get_reading_time(post)%></span>
+              <h2><%= link_to post[:title], post.path %></h2>
+            </li>
+            <% end %>
+          </ul>
+        </nav>

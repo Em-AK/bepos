@@ -1,4 +1,6 @@
-/* Custom CSS */
+/*** Custom CSS ***/
+
+/* Aside */
 
 #nav {
   color: rgb(100, 100, 100);
@@ -15,11 +17,17 @@
   font-weight: 900;
   text-decoration: none;
 }
-.brand:hover, .brand:focus {
+.brand:hover, .brand:focus, .links a:hover, .links a:focus {
   color: rgb(190, 190, 190);
   text-decoration: none;
 }
-.brand, .author a {
+#nav .tagline {
+  font-size: 93%;
+  margin-top: -4px;
+  margin-bottom: 25px;
+  font-style: italic;
+}
+.brand, .author a, .links a {
   color: rgb(100, 100, 100);
 }
 .author a {
@@ -29,22 +37,9 @@
   color: rgb(0, 184, 255);
   text-decoration: none;
 }
-#nav .tagline {
-  font-size: 93%;
-  margin-top: -4px;
-  margin-bottom: 25px;
-  font-style: italic;
-}
-.meta-data {
-  border-right: 3px solid rgb(190, 190, 190);
-  padding: 5px 20px;
-  margin: 0px 0px 35px;
-  font-size: 18px;
-  font-family: 'Source Sans Pro', sans-serif;
-}
-.meta-data span {
-  margin-left: 30px;
-}
+
+/* Index */
+
 .reading-menu {
   padding-left: 0;
   margin-top: 85px;
@@ -61,6 +56,19 @@
 .reading-menu h2 {
   font-size: 1.3em;
   font-weight: 400;
+}
+
+/* Article */
+
+.meta-data {
+  border-right: 3px solid rgb(190, 190, 190);
+  padding: 5px 20px;
+  margin: 0px 0px 35px;
+  font-size: 18px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.meta-data span {
+  margin-left: 30px;
 }
 article {
   line-height: 1.4em;

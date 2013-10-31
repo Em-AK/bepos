@@ -36,7 +36,7 @@ Written with ♥ by [EmAK](https://twitter.com/em_hack) under CC-BY.
 * *When* I visit the home page
 * *Then* I should see the time_to_read each article
 
-### ⊝ RSS feed
+### ✓ RSS feed
 * *Given* some articles were published on my blog
 * *When* I visit any page
 * *Then* I should find a link to the RSS feed of the blog

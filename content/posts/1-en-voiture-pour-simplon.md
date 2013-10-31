@@ -2,6 +2,7 @@
 title: "En voiture pour Simplon !"
 created_at: 2013-09-27
 kind: article
+lang: fr
 ---
 
 Après un processus de sélection [dynamique](https://www.facebook.com/media/set/?set=a.600562436666808.1073741835.563987606990958&type=3), j'ai fait ma pré-rentrée au 55 rue de Vincennes : le QG Montreuillois de [Simplon.co](http://simplon.co).
