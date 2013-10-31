@@ -52,4 +52,3 @@ Written with ♥ by [EmAK](https://twitter.com/em_hack) under CC-BY.
 * *Given* some articles were published on my blog
 * *When* I visit the blog in english
 * *Then* I should be able to switch from english to french
-
