@@ -34,7 +34,7 @@
   text-decoration: underline;
 }
 .author a:hover, .author a:focus {
-  color: rgb(0, 184, 255);
+  color: #5599FF;
   text-decoration: none;
 }
 

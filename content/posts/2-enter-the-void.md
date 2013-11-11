@@ -5,7 +5,7 @@ kind: article
 lang: fr
 ---
 
-<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/34713375&amp;color=00b8ff&amp;auto_play=false&amp;show_artwork=false"></iframe>
+<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/34713375&amp;color=5599ff&amp;auto_play=false&amp;show_artwork=false"></iframe>
 
 J'ai profité des derniers jours de **la prairie** pour participer à mon premier [projet](http://www.fyow.net) *made in simplon* avec une petite équipe de recrues. Derniers instants de papillonage avant d'attaquer les choses sérieuses.
 
