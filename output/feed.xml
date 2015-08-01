@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://bepos.be/</id>
-  <title>Bepos {Hacking for Hapiness}</title>
+  <title>bepos {Hacking for Hapiness}</title>
   <updated>2013-10-27T23:00:00Z</updated>
   <link rel="alternate" href="http://bepos.be/"/>
   <link rel="self" href="http://bepos.be/feed.xml"/>

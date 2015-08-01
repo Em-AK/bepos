@@ -2,12 +2,19 @@
 title: Home
 lang: none
 ---
-        <nav id="content" class="col-md-6 col-md-offset-3">
+        <nav id="content" class="col-md-7 col-md-offset-3">
           <ul class="reading-menu">
             <% sorted_articles.each do |post| %>
             <li>
-              <span class="icon-stopwatch"> <%= get_reading_time(post)%></span>
-              <h2><%= link_to post[:title], post.path %></h2>
+              <div class="row">
+                <div class="col-md-3 col-md-push-9 col-sm-12">
+                  <span class="published_at"><%= short_date(post) %>_ </span>
+                  <span class="icon-stopwatch"><%= get_reading_time(post) %></span>
+                </div>
+                <div class="col-md-9 col-md-pull-3 col-sm-12">
+                  <h2><%= link_to post[:title], post.path %></h2>
+                </div>
+              </div>
             </li>
             <% end %>
           </ul>
