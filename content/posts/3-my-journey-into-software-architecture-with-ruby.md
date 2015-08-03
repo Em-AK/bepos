@@ -1,11 +1,9 @@
 ---
-title: My journey into software architecture with ruby
-created_at: {}
+title: "My journey into software architecture with ruby"
+created_at: 2015-08-02
 kind: article
 lang: en
-published: true
 ---
-
 
 *As a ruby practitioner here is a report on how I began my journey into software architecture over the course of a weekend.*
 
@@ -19,7 +17,7 @@ After a few searches it seems that my problem is very common and well known by t
 ![Sponge Bob](../../img/3-spongebob-computer.jpg)
 {: refdef}
 
-The most extreme example I found is a class derived from AR that have no state to save in the database. The `SpongeBob` class whose reponsibility is to instanciate other AR objects by parsing the content of a markdown string and to persist the state of those objects into the database. For sure there is no point for `SpongeBob` himself to inherit from AR. 
+The most extreme example I found is a class derived from AR that have no state to save in the database. The `SpongeBob` class whose reponsibility is to instanciate other AR objects by parsing the content of a markdown string and to persist the state of those objects into the database. For sure there is no point for `SpongeBob` himself to inherit from AR.
 
 Looking for inspiration I began to search for 'service object'.
 
@@ -27,7 +25,7 @@ Looking for inspiration I began to search for 'service object'.
 
 My [first hit](https://sporto.github.io/blog/2012/11/15/a-pattern-for-service-objects-in-rails/) although not very convincing brought me to two very interesting resources :
   * [7 Patterns to Refactor Fat ActiveRecord Models](http://blog.codeclimate.com/blog/2012/10/17/7-ways-to-decompose-fat-activerecord-models/)
-  * and somewhere in the comments a [conference by Uncle Bob from 2011 : "Architecture the Lost Years" (~1h)](https://youtu.be/WpkDN78P884). 
+  * and somewhere in the comments a [conference by Uncle Bob from 2011 : "Architecture the Lost Years" (~1h)](https://youtu.be/WpkDN78P884).
 
 During his show Robert passes a few messages:
 
@@ -48,7 +46,12 @@ It wasn't long before I crossed the path of [Trailblazer](http://trailblazerb.or
 Then I remembered about [Lotus](http://lotusrb.org/) a complete web framework combining 7 specialized frameworks, with more of them comming soon. The Lotus guides introduce the [Container architecture](http://lotusrb.org/guides/architectures/container/)
 
   > Lotus Container arch is heavily inspired by Clean Architecture.
- 
+
+{:refdef: .picture}
+![Lotus: Explicit over magic](../../img/3-...png)
+*Extracted from [these slides](https://speakerdeck.com/jodosha/lotus-brighton-ruby-2015) by Luca Guidi*
+{: refdef}
+
 I find it really nice to have a lightwheight and modular framework which is made to play nicely with the concepts of the Clean Architecture. I played with the *getting started guide* and it doesn't feels less productive/intuitive than the Rails way. By digging a little bit deeper in its APIs it may become my next framework of choice.
 
 ## It's only the beginning
@@ -61,4 +64,4 @@ Of course I continue to experiment with the Lotus framework. And may use it for 
 
 ~ E.
 
-*You can react, complement, question this article by pinging [@em_hack](https://twitter.com/em_hack) on twitter*
+*If you want to react, complement, question this article, ping [@em_hack](https://twitter.com/em_hack)*

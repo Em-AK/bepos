@@ -1,0 +1,124 @@
+        <!DOCTYPE HTML>
+
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>bepos {Hacking for Hapiness} My journey into software architecture with ruby</title>
+    <link rel="icon" href="/img/favicon.ico" >
+    <!-- Writen with Style -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/bootstrap.css">
+    <!-- Nice fonts for your tired eyes -->
+    <link href='http://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,900' rel='stylesheet' type='text/css'>
+    <!-- you don't need to keep this, but it's cool for stats! ... I'm ok with these stats !-->
+    <meta name="generator" content="nanoc 3.6.11">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <!-- meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" !-->
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <aside id="nav" class="col-md-3">
+          <a class="brand" href="/">bepos</a>
+          <p class="tagline">Hacking for Hapiness</p>
+          <div class="links">
+            <a href="https://github.com/Em-AK" class="icon-github-circled"></a>
+            <a href="https://twitter.com/Em_hack" class="icon-twitter-circled"></a>
+            <a href="http://creativecommons.org/licenses/by/3.0/">
+              <span class="icon-cc"></span>
+              <span class="icon-cc-by"></span>
+            </a>
+            <a href="/feed.xml" class="icon-rss"></a>
+          </div>
+          <p class="author">Built with <a href="http://nanoc.ws/">nanoc</a><br>
+          Written with ♥<br>
+          by <a href="https://twitter.com/Em_hack">@Em_hack</a></p>
+        </aside>
+        
+        <article id="content" class="col-md-6 col-md-offset-3">
+          <div class='post'>
+            <h1>My journey into software architecture with ruby</h1>
+            <p class="meta-data text-right">AUGUST 2, 2015 <span class="icon-stopwatch"> ~ 2 min</span></p>
+              <p><em>As a ruby practitioner here is a report on how I began my journey into software architecture over the course of a weekend.</em></p>
+
+<p>I am currently working on a web application with Rails. As the application grows, my ActiveRecord (AR) models grow with all the business logic in it. It is evident by reading the tests linked to these models that my classes violate the S of the <a href="https://goo.gl/9b6xB6">SOLID</a> principles.</p>
+
+<p>After a few searches it seems that my problem is very common and well known by the more experienced rubyists : I developed the Rails app syndrom.</p>
+
+<h2 id="activerecord-all-the-things">ActiveRecord all the things</h2>
+
+<p class="picture"><img src="../../img/3-spongebob-computer.jpg" alt="Sponge Bob" /></p>
+
+<p>The most extreme example I found is a class derived from AR that have no state to save in the database. The <code>SpongeBob</code> class whose reponsibility is to instanciate other AR objects by parsing the content of a markdown string and to persist the state of those objects into the database. For sure there is no point for <code>SpongeBob</code> himself to inherit from AR.</p>
+
+<p>Looking for inspiration I began to search for ‘service object’.</p>
+
+<h2 id="from-spongebob-to-uncle-bob">From <code>SpongeBob</code> to Uncle Bob</h2>
+
+<p>My <a href="https://sporto.github.io/blog/2012/11/15/a-pattern-for-service-objects-in-rails/">first hit</a> although not very convincing brought me to two very interesting resources :
+  * <a href="http://blog.codeclimate.com/blog/2012/10/17/7-ways-to-decompose-fat-activerecord-models/">7 Patterns to Refactor Fat ActiveRecord Models</a>
+  * and somewhere in the comments a <a href="https://youtu.be/WpkDN78P884">conference by Uncle Bob from 2011 : “Architecture the Lost Years” (~1h)</a>.</p>
+
+<p>During his show Robert passes a few messages:</p>
+
+<blockquote>
+  <p>The web is a delivery mechanism</p>
+</blockquote>
+
+<blockquote>
+  <p>The top level architecture should reflect the intent of an application</p>
+</blockquote>
+
+<p>What I like is the boundary he draws around the application. As an engineer I like to think about systems by first defining their boudaries, then it’s easy to observe what flows in and out and to understand the behaviour and responsibility/authority of the system. To have the application being able to live on its own, decoupled from the web framework and the database sounds like a dream to my Rails oriented mind. But what a nice dream to have.</p>
+
+<p>At the end of the talk I had more questions than answers. Why everyone seems to continue to live inside Rails ? How to properly turn Rails into a plugin of my application ? 4 years after <em>the lost years</em> where are the working implementations of these ideas ?</p>
+
+<h2 id="go-read-some-code">Go read some code</h2>
+
+<p>I found a first implementation in the <a href="http://retromocha.com/obvious/">Obvious gem</a> by Brian Knapp wich is a guide to implement the <a href="http://blog.8thlight.com/uncle-bob/2012/08/13/the-clean-architecture.html">clean architecture</a>. Awesome! now all this stuff has a name :)</p>
+
+<p>It wasn’t long before I crossed the path of <a href="http://trailblazerb.org/">Trailblazer</a> which seems to be a very comprehensive set of components in which Rails can be easily plugged in. Nick Sutterer even wrote <a href="https://leanpub.com/trailblazer">a whole book</a> about it. Clean. isn’t it?</p>
+
+<p>Then I remembered about <a href="http://lotusrb.org/">Lotus</a> a complete web framework combining 7 specialized frameworks, with more of them comming soon. The Lotus guides introduce the <a href="http://lotusrb.org/guides/architectures/container/">Container architecture</a></p>
+
+<blockquote>
+  <p>Lotus Container arch is heavily inspired by Clean Architecture.</p>
+</blockquote>
+
+<p>I find it really nice to have a lightwheight and modular framework which is made to play nicely with the concepts of the Clean Architecture. I played with the <em>getting started guide</em> and it doesn’t feels less productive/intuitive than the Rails way. By digging a little bit deeper in its APIs it may become my next framework of choice.</p>
+
+<h2 id="its-only-the-beginning">It’s only the beginning</h2>
+
+<p>That was a lot of stuff for me to digest in a single weekend. I am very happy with what I learned and the perspectives I gained.</p>
+
+<p>Back to my current app, I will start small by extracting my application specific logic from my AR models into <a href="https://github.com/orgsync/active_interaction">Active Interactors</a> or something similar.</p>
+
+<p>Of course I continue to experiment with the Lotus framework. And may use it for a side project very (very) soon!</p>
+
+<p>~ E.</p>
+
+<p><em>You can react, complement, question this article by pinging <a href="https://twitter.com/em_hack">@em_hack</a> on twitter</em></p>
+
+          </div>
+        </article>
+        
+      </div>
+    </div>
+
+    <!-- Analytics by google ... my bad :( -->
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-39302187-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>
+
