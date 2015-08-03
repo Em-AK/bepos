@@ -2,13 +2,80 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://bepos.be/</id>
   <title>bepos {Hacking for Hapiness}</title>
-  <updated>2013-10-27T23:00:00Z</updated>
+  <updated>2015-08-01T22:00:00Z</updated>
   <link rel="alternate" href="http://bepos.be/"/>
   <link rel="self" href="http://bepos.be/feed.xml"/>
   <author>
     <name>@Em_hack</name>
     <uri>https://twitter.com/Em_hack</uri>
   </author>
+  <entry>
+    <id>tag:bepos.be,2015-08-02:/posts/3-my-journey-into-software-architecture-with-ruby/</id>
+    <title type="html">My journey into software architecture with ruby</title>
+    <published>2015-08-01T22:00:00Z</published>
+    <updated>2015-08-01T22:00:00Z</updated>
+    <link rel="alternate" href="http://bepos.be/posts/3-my-journey-into-software-architecture-with-ruby/"/>
+    <content type="html">&lt;p&gt;&lt;em&gt;As a ruby practitioner here is a report on how I began my journey into software architecture over the course of a weekend.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;I am currently working on a web application with Rails. As the application grows, my ActiveRecord (AR) models grow with all the business logic in it. It is evident by reading the tests linked to these models that my classes violate the S of the &lt;a href="https://goo.gl/9b6xB6"&gt;SOLID&lt;/a&gt; principles.&lt;/p&gt;
+
+&lt;p&gt;After a few searches it seems that my problem is very common and well known by the more experienced rubyists : I developed the Rails app syndrom.&lt;/p&gt;
+
+&lt;h2 id="activerecord-all-the-things"&gt;ActiveRecord all the things&lt;/h2&gt;
+
+&lt;p class="picture"&gt;&lt;img src="../../img/3-spongebob-computer.jpg" alt="Sponge Bob" /&gt;&lt;/p&gt;
+
+&lt;p&gt;The most extreme example I found is a class derived from AR that have no state to save in the database. The &lt;code&gt;SpongeBob&lt;/code&gt; class whose reponsibility is to instanciate other AR objects by parsing the content of a markdown string and to persist the state of those objects into the database. For sure there is no point for &lt;code&gt;SpongeBob&lt;/code&gt; himself to inherit from AR.&lt;/p&gt;
+
+&lt;p&gt;Looking for inspiration I began to search for ‘service object’.&lt;/p&gt;
+
+&lt;h2 id="from-spongebob-to-uncle-bob"&gt;From &lt;code&gt;SpongeBob&lt;/code&gt; to Uncle Bob&lt;/h2&gt;
+
+&lt;p&gt;My &lt;a href="https://sporto.github.io/blog/2012/11/15/a-pattern-for-service-objects-in-rails/"&gt;first hit&lt;/a&gt; although not very convincing brought me to two very interesting resources :
+  * &lt;a href="http://blog.codeclimate.com/blog/2012/10/17/7-ways-to-decompose-fat-activerecord-models/"&gt;7 Patterns to Refactor Fat ActiveRecord Models&lt;/a&gt;
+  * and somewhere in the comments a &lt;a href="https://youtu.be/WpkDN78P884"&gt;conference by Uncle Bob from 2011 : “Architecture the Lost Years” (~1h)&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;During his show Robert passes a few messages:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The web is a delivery mechanism&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The top level architecture should reflect the intent of an application&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;What I like is the boundary he draws around the application. As an engineer I like to think about systems by first defining their boudaries, then it’s easy to observe what flows in and out and to understand the behaviour and responsibility/authority of the system. To have the application being able to live on its own, decoupled from the web framework and the database sounds like a dream to my Rails oriented mind. But what a nice dream to have.&lt;/p&gt;
+
+&lt;p&gt;At the end of the talk I had more questions than answers. Why everyone seems to continue to live inside Rails ? How to properly turn Rails into a plugin of my application ? 4 years after &lt;em&gt;the lost years&lt;/em&gt; where are the working implementations of these ideas ?&lt;/p&gt;
+
+&lt;h2 id="go-read-some-code"&gt;Go read some code&lt;/h2&gt;
+
+&lt;p&gt;I found a first implementation in the &lt;a href="http://retromocha.com/obvious/"&gt;Obvious gem&lt;/a&gt; by Brian Knapp wich is a guide to implement the &lt;a href="http://blog.8thlight.com/uncle-bob/2012/08/13/the-clean-architecture.html"&gt;clean architecture&lt;/a&gt;. Awesome! now all this stuff has a name :)&lt;/p&gt;
+
+&lt;p&gt;It wasn’t long before I crossed the path of &lt;a href="http://trailblazerb.org/"&gt;Trailblazer&lt;/a&gt; which seems to be a very comprehensive set of components in which Rails can be easily plugged in. Nick Sutterer even wrote &lt;a href="https://leanpub.com/trailblazer"&gt;a whole book&lt;/a&gt; about it. Clean. isn’t it?&lt;/p&gt;
+
+&lt;p&gt;Then I remembered about &lt;a href="http://lotusrb.org/"&gt;Lotus&lt;/a&gt; a complete web framework combining 7 specialized frameworks, with more of them comming soon. The Lotus guides introduce the &lt;a href="http://lotusrb.org/guides/architectures/container/"&gt;Container architecture&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Lotus Container arch is heavily inspired by Clean Architecture.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I find it really nice to have a lightwheight and modular framework which is made to play nicely with the concepts of the Clean Architecture. I played with the &lt;em&gt;getting started guide&lt;/em&gt; and it doesn’t feels less productive/intuitive than the Rails way. By digging a little bit deeper in its APIs it may become my next framework of choice.&lt;/p&gt;
+
+&lt;h2 id="its-only-the-beginning"&gt;It’s only the beginning&lt;/h2&gt;
+
+&lt;p&gt;That was a lot of stuff for me to digest in a single weekend. I am very happy with what I learned and the perspectives I gained.&lt;/p&gt;
+
+&lt;p&gt;Back to my current app, I will start small by extracting my application specific logic from my AR models into &lt;a href="https://github.com/orgsync/active_interaction"&gt;Active Interactors&lt;/a&gt; or something similar.&lt;/p&gt;
+
+&lt;p&gt;Of course I continue to experiment with the Lotus framework. And may use it for a side project very (very) soon!&lt;/p&gt;
+
+&lt;p&gt;~ E.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;You can react, complement, question this article by pinging &lt;a href="https://twitter.com/em_hack"&gt;@em_hack&lt;/a&gt; on twitter&lt;/em&gt;&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <id>tag:bepos.be,2013-10-28:/posts/2-enter-the-void/</id>
     <title type="html">Enter the void</title>
