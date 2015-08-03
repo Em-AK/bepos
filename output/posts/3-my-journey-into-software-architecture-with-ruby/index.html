@@ -49,7 +49,7 @@
 
 <h2 id="activerecord-all-the-things">ActiveRecord all the things</h2>
 
-<p class="picture"><img src="../../img/3-spongebob-computer.jpg" alt="Sponge Bob" /></p>
+<p class="picture picture"><img src="../../img/3-spongebob-computer.jpg" alt="Sponge Bob" /></p>
 
 <p>The most extreme example I found is a class derived from AR that have no state to save in the database. The <code>SpongeBob</code> class whose reponsibility is to instanciate other AR objects by parsing the content of a markdown string and to persist the state of those objects into the database. For sure there is no point for <code>SpongeBob</code> himself to inherit from AR.</p>
 
@@ -57,9 +57,12 @@
 
 <h2 id="from-spongebob-to-uncle-bob">From <code>SpongeBob</code> to Uncle Bob</h2>
 
-<p>My <a href="https://sporto.github.io/blog/2012/11/15/a-pattern-for-service-objects-in-rails/">first hit</a> although not very convincing brought me to two very interesting resources :
-  * <a href="http://blog.codeclimate.com/blog/2012/10/17/7-ways-to-decompose-fat-activerecord-models/">7 Patterns to Refactor Fat ActiveRecord Models</a>
-  * and somewhere in the comments a <a href="https://youtu.be/WpkDN78P884">conference by Uncle Bob from 2011 : “Architecture the Lost Years” (~1h)</a>.</p>
+<p>My <a href="https://sporto.github.io/blog/2012/11/15/a-pattern-for-service-objects-in-rails/">first hit</a> although not very convincing brought me to two very interesting resources :</p>
+
+<ul>
+  <li><a href="http://blog.codeclimate.com/blog/2012/10/17/7-ways-to-decompose-fat-activerecord-models/">7 Patterns to Refactor Fat ActiveRecord Models</a></li>
+  <li>and somewhere in the comments a <a href="https://youtu.be/WpkDN78P884">conference by Uncle Bob from 2011 : “Architecture the Lost Years” (~1h)</a>.</li>
+</ul>
 
 <p>During his show Robert passes a few messages:</p>
 
@@ -87,11 +90,14 @@
   <p>Lotus Container arch is heavily inspired by Clean Architecture.</p>
 </blockquote>
 
-<p>I find it really nice to have a lightwheight and modular framework which is made to play nicely with the concepts of the Clean Architecture. I played with the <em>getting started guide</em> and it doesn’t feels less productive/intuitive than the Rails way. By digging a little bit deeper in its APIs it may become my next framework of choice.</p>
+<p class="picture picture"><img src="../../img/3-lotus-explicit-rules-magic.png" alt="Lotus: Explicit over magic" />
+<em>Extracted from <a href="https://speakerdeck.com/jodosha/lotus-brighton-ruby-2015">these slides</a> by Luca Guidi</em></p>
 
-<h2 id="its-only-the-beginning">It’s only the beginning</h2>
+<p>I find it really nice to have a lightwheight and modular framework made purposely to play nicely with the concepts of the Clean Architecture. I followed the <em>getting started guide</em> and it doesn’t feels less productive/intuitive than the Rails way. After digging deeper in its APIs it may become my next framework of choice.</p>
 
-<p>That was a lot of stuff for me to digest in a single weekend. I am very happy with what I learned and the perspectives I gained.</p>
+<h2 id="it-is-only-the-beginning">It is only the beginning</h2>
+
+<p>That was a lot of stuff for me to digest in a single weekend, but also a lot of fun. I am very happy with what I learned and the perspective I gained.</p>
 
 <p>Back to my current app, I will start small by extracting my application specific logic from my AR models into <a href="https://github.com/orgsync/active_interaction">Active Interactors</a> or something similar.</p>
 
@@ -99,7 +105,7 @@
 
 <p>~ E.</p>
 
-<p><em>You can react, complement, question this article by pinging <a href="https://twitter.com/em_hack">@em_hack</a> on twitter</em></p>
+<p><em>If you want to react, complement or question this article, ping <a href="https://twitter.com/em_hack">@em_hack</a></em></p>
 
           </div>
         </article>

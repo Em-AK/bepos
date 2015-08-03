@@ -23,7 +23,7 @@
 
 &lt;h2 id="activerecord-all-the-things"&gt;ActiveRecord all the things&lt;/h2&gt;
 
-&lt;p class="picture"&gt;&lt;img src="../../img/3-spongebob-computer.jpg" alt="Sponge Bob" /&gt;&lt;/p&gt;
+&lt;p class="picture picture"&gt;&lt;img src="../../img/3-spongebob-computer.jpg" alt="Sponge Bob" /&gt;&lt;/p&gt;
 
 &lt;p&gt;The most extreme example I found is a class derived from AR that have no state to save in the database. The &lt;code&gt;SpongeBob&lt;/code&gt; class whose reponsibility is to instanciate other AR objects by parsing the content of a markdown string and to persist the state of those objects into the database. For sure there is no point for &lt;code&gt;SpongeBob&lt;/code&gt; himself to inherit from AR.&lt;/p&gt;
 
@@ -31,9 +31,12 @@
 
 &lt;h2 id="from-spongebob-to-uncle-bob"&gt;From &lt;code&gt;SpongeBob&lt;/code&gt; to Uncle Bob&lt;/h2&gt;
 
-&lt;p&gt;My &lt;a href="https://sporto.github.io/blog/2012/11/15/a-pattern-for-service-objects-in-rails/"&gt;first hit&lt;/a&gt; although not very convincing brought me to two very interesting resources :
-  * &lt;a href="http://blog.codeclimate.com/blog/2012/10/17/7-ways-to-decompose-fat-activerecord-models/"&gt;7 Patterns to Refactor Fat ActiveRecord Models&lt;/a&gt;
-  * and somewhere in the comments a &lt;a href="https://youtu.be/WpkDN78P884"&gt;conference by Uncle Bob from 2011 : “Architecture the Lost Years” (~1h)&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;My &lt;a href="https://sporto.github.io/blog/2012/11/15/a-pattern-for-service-objects-in-rails/"&gt;first hit&lt;/a&gt; although not very convincing brought me to two very interesting resources :&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="http://blog.codeclimate.com/blog/2012/10/17/7-ways-to-decompose-fat-activerecord-models/"&gt;7 Patterns to Refactor Fat ActiveRecord Models&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;and somewhere in the comments a &lt;a href="https://youtu.be/WpkDN78P884"&gt;conference by Uncle Bob from 2011 : “Architecture the Lost Years” (~1h)&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;During his show Robert passes a few messages:&lt;/p&gt;
 
@@ -61,11 +64,14 @@
   &lt;p&gt;Lotus Container arch is heavily inspired by Clean Architecture.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;I find it really nice to have a lightwheight and modular framework which is made to play nicely with the concepts of the Clean Architecture. I played with the &lt;em&gt;getting started guide&lt;/em&gt; and it doesn’t feels less productive/intuitive than the Rails way. By digging a little bit deeper in its APIs it may become my next framework of choice.&lt;/p&gt;
+&lt;p class="picture picture"&gt;&lt;img src="../../img/3-lotus-explicit-rules-magic.png" alt="Lotus: Explicit over magic" /&gt;
+&lt;em&gt;Extracted from &lt;a href="https://speakerdeck.com/jodosha/lotus-brighton-ruby-2015"&gt;these slides&lt;/a&gt; by Luca Guidi&lt;/em&gt;&lt;/p&gt;
 
-&lt;h2 id="its-only-the-beginning"&gt;It’s only the beginning&lt;/h2&gt;
+&lt;p&gt;I find it really nice to have a lightwheight and modular framework made purposely to play nicely with the concepts of the Clean Architecture. I followed the &lt;em&gt;getting started guide&lt;/em&gt; and it doesn’t feels less productive/intuitive than the Rails way. After digging deeper in its APIs it may become my next framework of choice.&lt;/p&gt;
 
-&lt;p&gt;That was a lot of stuff for me to digest in a single weekend. I am very happy with what I learned and the perspectives I gained.&lt;/p&gt;
+&lt;h2 id="it-is-only-the-beginning"&gt;It is only the beginning&lt;/h2&gt;
+
+&lt;p&gt;That was a lot of stuff for me to digest in a single weekend, but also a lot of fun. I am very happy with what I learned and the perspective I gained.&lt;/p&gt;
 
 &lt;p&gt;Back to my current app, I will start small by extracting my application specific logic from my AR models into &lt;a href="https://github.com/orgsync/active_interaction"&gt;Active Interactors&lt;/a&gt; or something similar.&lt;/p&gt;
 
@@ -73,7 +79,7 @@
 
 &lt;p&gt;~ E.&lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;You can react, complement, question this article by pinging &lt;a href="https://twitter.com/em_hack"&gt;@em_hack&lt;/a&gt; on twitter&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;If you want to react, complement or question this article, ping &lt;a href="https://twitter.com/em_hack"&gt;@em_hack&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 </content>
   </entry>
   <entry>

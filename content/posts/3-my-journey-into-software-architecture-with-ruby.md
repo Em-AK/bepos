@@ -24,6 +24,7 @@ Looking for inspiration I began to search for 'service object'.
 ## From `SpongeBob` to Uncle Bob
 
 My [first hit](https://sporto.github.io/blog/2012/11/15/a-pattern-for-service-objects-in-rails/) although not very convincing brought me to two very interesting resources :
+
   * [7 Patterns to Refactor Fat ActiveRecord Models](http://blog.codeclimate.com/blog/2012/10/17/7-ways-to-decompose-fat-activerecord-models/)
   * and somewhere in the comments a [conference by Uncle Bob from 2011 : "Architecture the Lost Years" (~1h)](https://youtu.be/WpkDN78P884).
 
@@ -48,15 +49,15 @@ Then I remembered about [Lotus](http://lotusrb.org/) a complete web framework co
   > Lotus Container arch is heavily inspired by Clean Architecture.
 
 {:refdef: .picture}
-![Lotus: Explicit over magic](../../img/3-...png)
+![Lotus: Explicit over magic](../../img/3-lotus-explicit-rules-magic.png)
 *Extracted from [these slides](https://speakerdeck.com/jodosha/lotus-brighton-ruby-2015) by Luca Guidi*
 {: refdef}
 
-I find it really nice to have a lightwheight and modular framework which is made to play nicely with the concepts of the Clean Architecture. I played with the *getting started guide* and it doesn't feels less productive/intuitive than the Rails way. By digging a little bit deeper in its APIs it may become my next framework of choice.
+I find it really nice to have a lightwheight and modular framework made purposely to play nicely with the concepts of the Clean Architecture. I followed the *getting started guide* and it doesn't feels less productive/intuitive than the Rails way. After digging deeper in its APIs it may become my next framework of choice.
 
-## It's only the beginning
+## It is only the beginning
 
-That was a lot of stuff for me to digest in a single weekend. I am very happy with what I learned and the perspectives I gained.
+That was a lot of stuff for me to digest in a single weekend, but also a lot of fun. I am very happy with what I learned and the perspective I gained.
 
 Back to my current app, I will start small by extracting my application specific logic from my AR models into [Active Interactors](https://github.com/orgsync/active_interaction) or something similar.
 
@@ -64,4 +65,4 @@ Of course I continue to experiment with the Lotus framework. And may use it for 
 
 ~ E.
 
-*If you want to react, complement, question this article, ping [@em_hack](https://twitter.com/em_hack)*
+*If you want to react, complement or question this article, ping [@em_hack](https://twitter.com/em_hack)*
