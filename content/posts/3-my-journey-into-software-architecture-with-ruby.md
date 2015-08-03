@@ -7,7 +7,7 @@ lang: en
 
 *As a ruby practitioner here is a report on how I began my journey into software architecture over the course of a weekend.*
 
-I am currently working on a web application with Rails. As the application grows, my ActiveRecord (AR) models grow with all the business logic in it. It is evident by reading the tests linked to these models that my classes violate the S of the [SOLID](https://goo.gl/9b6xB6) principles.
+I am currently working on a web application with Rails. As the application grows, my ActiveRecord (AR) models grow with all the business logic in it. It is obvious by reading the tests linked to these models that my classes violate the S in the [SOLID](https://goo.gl/9b6xB6) principles.
 
 After a few searches it seems that my problem is very common and well known by the more experienced rubyists : I developed the Rails app syndrom.
 

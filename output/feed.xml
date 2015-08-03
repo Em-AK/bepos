@@ -17,7 +17,7 @@
     <link rel="alternate" href="http://bepos.be/posts/3-my-journey-into-software-architecture-with-ruby/"/>
     <content type="html">&lt;p&gt;&lt;em&gt;As a ruby practitioner here is a report on how I began my journey into software architecture over the course of a weekend.&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;I am currently working on a web application with Rails. As the application grows, my ActiveRecord (AR) models grow with all the business logic in it. It is evident by reading the tests linked to these models that my classes violate the S of the &lt;a href="https://goo.gl/9b6xB6"&gt;SOLID&lt;/a&gt; principles.&lt;/p&gt;
+&lt;p&gt;I am currently working on a web application with Rails. As the application grows, my ActiveRecord (AR) models grow with all the business logic in it. It is obvious by reading the tests linked to these models that my classes violate the S in the &lt;a href="https://goo.gl/9b6xB6"&gt;SOLID&lt;/a&gt; principles.&lt;/p&gt;
 
 &lt;p&gt;After a few searches it seems that my problem is very common and well known by the more experienced rubyists : I developed the Rails app syndrom.&lt;/p&gt;
 
