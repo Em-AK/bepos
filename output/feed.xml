@@ -2,13 +2,60 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://bepos.be/</id>
   <title>bepos {Hacking for Hapiness}</title>
-  <updated>2015-08-01T22:00:00Z</updated>
+  <updated>2015-09-21T22:00:00Z</updated>
   <link rel="alternate" href="http://bepos.be/"/>
   <link rel="self" href="http://bepos.be/feed.xml"/>
   <author>
     <name>@Em_hack</name>
     <uri>https://twitter.com/Em_hack</uri>
   </author>
+  <entry>
+    <id>tag:bepos.be,2015-09-22:/posts/4-working-at-night-without-frying-your-eyes/</id>
+    <title type="html">Working at night without frying your eyes</title>
+    <published>2015-09-21T22:00:00Z</published>
+    <updated>2015-09-21T22:00:00Z</updated>
+    <link rel="alternate" href="http://bepos.be/posts/4-working-at-night-without-frying-your-eyes/"/>
+    <content type="html">&lt;p&gt;first PC&lt;/p&gt;
+
+&lt;p&gt;adopted the &lt;a href="http://www.paulgraham.com/makersschedule.html"&gt;maker’s shedule&lt;/a&gt;,
+not because I was actually making anything at that time, simply
+because I liked the quietness of the night on the campus.&lt;/p&gt;
+
+&lt;p&gt;From this time I kept the habit of being a night owl. Even during my early years 
+after graduation I kept spending a lot of time researching and working at night.
+I remember how after a certain amount of time behind my screen
+the feelling of tiredness vanished, finding myself shutting down my laptop at 3 am
+while having a corporate job beginning at 9. I remember how hurting it was on my eyes.
+Even a low screen brightness was uncomfortable.&lt;/p&gt;
+
+&lt;p&gt;I was truly sleep depraved. And this is part of the reasons why I decided to bend
+the path of my carrer.&lt;/p&gt;
+
+&lt;p&gt;Today as a programmer I still spend a lot of my working time behind a screen.
+Almost half of this time between sunset and sunrise. The lack of interuptions
+allows me to achieve things I am not able to do when everyone is buzzing around.&lt;/p&gt;
+
+&lt;p&gt;I adopted a wonderfull tool 2 years ago : a filter that decreases the color’s
+temperature of my screen after sunset. The software I use is called &lt;a href="http://jonls.dk/redshift/"&gt;redshift&lt;/a&gt;,
+which is the open source version of &lt;a href="https://justgetflux.com/"&gt;f.lux&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I also use &lt;a href="https://play.google.com/store/apps/details?id=com.urbandroid.lux"&gt;Twilight&lt;/a&gt;
+on my phone to remove any source of “blue light” in my environment.&lt;/p&gt;
+
+&lt;p&gt;last source of intensive light, LED indicators
+tapped them with a bit of electric tape.&lt;/p&gt;
+
+&lt;p&gt;If it happens that you too work in a dark environment. I highly suggest you to
+try one of these color filters and share your experience with me.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://justgetflux.com/research.html"&gt;Learn more about the science&lt;/a&gt; of
+how your screen’s color affects your sleep patterns.&lt;/p&gt;
+
+&lt;p&gt;~ E.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;If you want to react, complement or question this article, ping &lt;a href="https://twitter.com/em_hack"&gt;@em_hack&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <id>tag:bepos.be,2015-08-02:/posts/3-my-journey-into-software-architecture-with-ruby/</id>
     <title type="html">My journey into software architecture with ruby</title>
